@@ -1,0 +1,14 @@
+{
+  "name": "acme-iac",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {}
+  },
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y unzip && sudo mkdir -p /home/vscode/.local/bin && sudo chown $(id -u):$(id -g) /home/vscode/.local /home/vscode/.local/share /home/vscode/.local/bin && curl -fsSL https://cli.kiro.dev/install | bash && sudo ln -sf /home/vscode/.local/bin/kiro-cli /usr/local/bin/kiro-cli",
+  "mounts": [
+    "source=/home/node/.local/share/kiro-cli,target=/home/vscode/.local/share/kiro-cli,type=bind",
+    "source=/home/node/.kiro,target=/home/vscode/.kiro,type=bind"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "factory",
+  "description": "Factory work-item session",
+  "prompt": null,
+  "mcpServers": {},
+  "tools": [
+    "fs_read",
+    "fs_write",
+    "execute_bash",
+    "grep",
+    "glob",
+    "thinking"
+  ],
+  "toolAliases": {
+    "read": "fs_read",
+    "write": "fs_write",
+    "edit": "fs_write",
+    "str_replace": "fs_write",
+    "bash": "execute_bash",
+    "shell": "execute_bash"
+  },
+  "allowedTools": [
+    "fs_read",
+    "fs_write",
+    "execute_bash",
+    "grep",
+    "glob",
+    "thinking"
+  ],
+  "resources": [
+    "file://.kiro/steering/**/*.md"
+  ],
+  "toolsSettings": {},
+  "includeMcpJson": false,
+  "model": null
+}

@@ -1,0 +1,5 @@
+.factory/
+.terraform/
+*.mp4
+*.tfstate
+*.tfstate.*

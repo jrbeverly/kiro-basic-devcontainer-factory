@@ -1,0 +1,4 @@
+.factory/
+.terraform/
+*.tfstate
+*.tfstate.*
